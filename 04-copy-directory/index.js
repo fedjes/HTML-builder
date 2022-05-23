@@ -1,7 +1,7 @@
 const fs = require("fs");
 
 
-fs.rmdir("./04-copy-directory/files-copy", { recursive: true }, err => {
+fs.rm("./04-copy-directory/files-copy", { recursive: true }, err => {
 fs.mkdir("./04-copy-directory/files-copy", {recursive: false}, err => {
     console.log('new folder');
     
